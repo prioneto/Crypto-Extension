@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="libs/chart.min.js"></script>
+  </head>
+  <body>
+    <h1>Crypto Price Tracker</h1>
+    <div id="content">
+      <select id="crypto-select">
+        <option value="bitcoin">Bitcoin (BTC)</option>
+        <option value="ethereum">Ethereum (ETH)</option>
+        <option value="litecoin">Litecoin (LTC)</option>
+      </select>
+      <div id="price-display">Loading price...</div>
+      <canvas id="price-chart" width="300" height="150"></canvas>
+      <div id="alert-section">
+        <h2>Set Price Alert</h2>
+        <input type="number" id="alert-price" placeholder="Enter price in USD" />
+        <button id="set-alert">Set Alert</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
