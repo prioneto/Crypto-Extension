@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentCrypto = cryptoSelect.value;
   let priceData = [];
 
-  API_KEY = "G___lyZxup6H0gzEkUQzUhNoc8RlfFj4";
+  API_KEY = "YOUR_KEY";
 
   // Fetch price data from Blockchair API
   async function fetchPrice(crypto) {
